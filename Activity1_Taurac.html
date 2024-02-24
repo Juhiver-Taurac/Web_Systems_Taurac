@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Student Registration</title>
+    <style>
+        table, th, td {
+            text-align:left;
+            border: 1px solid black;
+            border-collapse: collapse;
+        }
+        input[type="text"], input[type="email"]{   
+            width: 100%;
+            padding: 6px;
+            box-sizing:border-box;    
+        }
+        select{
+            width: 100%;
+            padding: 6px;
+        }
+        textarea{
+            width: 30%;
+            padding: 20px;
+        }
+        input[type="submit"]{
+            padding: 6px;
+        }
+    </style>
+</head>
+    <body>
+
+        <h1>Student Registration Form</h1>
+        <table style="width: 100%">
+            <tr>
+              <th style="background-color: #f5f5f5"><label style="padding: 4px">First Name</label></th>
+              <td style="padding: 4px"><input type="text"></td>
+            </tr>
+            <tr>
+                <th style="background-color: #f5f5f5"><label style="padding: 4px">Last Name</label></th>
+                <td style="padding: 4px"><input type="text"></td>
+            </tr>
+            <tr>
+                <th style="background-color: #f5f5f5"><label style="padding: 4px">Email</label></th>
+                <td style="padding: 4px"><input type="email"></td>
+            </tr>
+            <tr>
+                <th style="background-color: #f5f5f5"><label style="padding: 4px">Gender</label></th>
+                <td style="padding: 4px">  
+                    <select id="Gender" name="Gender">
+                        <option value="male">Male</option>
+                        <option value="female">Female</option>
+                        <option value="other">Other</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <th style="background-color: #f5f5f5">Date of Birth</th>
+                <td style="padding: 4px"><input type="text"></td>
+            </tr>
+            <tr>
+                <th style="background-color: #f5f5f5">Address</th>
+                <td><textarea id="address" name="Address"></textarea></td>
+            </tr>
+            <tr>
+                <th style="background-color: #f5f5f5">City</th>
+                <td style="padding: 4px"><input type="text"></td>
+            </tr>
+            <tr>
+                <th style="background-color: #f5f5f5">Zip Code</th>
+                <td style="padding: 4px"><input type="text"></td>
+            </tr>
+            <tr>
+                <th style="background-color: #f5f5f5"></th>
+                <td colspan="2"><input type="submit" value="Submit" style="background-color: #2dfe54"></td>
+            </tr>
+        </table>
+
+    </body>
+</html>
